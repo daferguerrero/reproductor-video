@@ -1,0 +1,87 @@
+@import './botones.css';
+
+body{
+    background-color: #26B4BC;
+    font-family: 'Nunito', sans-serif;
+}
+
+.wrapper{
+    max-inline-size: 900px;
+    margin: auto;
+}
+
+.reproductor{
+    margin-block-start: 100px;
+    position: relative;
+}
+
+.reproductor video{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+}
+
+.titulo-reproductor{
+    color: #fff;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+}
+
+.acciones-reproductor{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 2; */
+
+    gap: 20px;
+}
+
+.barra-progreso{
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+
+    display: flex;
+    padding: 10px;
+}
+
+.barra-progreso input{
+    flex: 1;
+}
+
+.contenedor-reproductor{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.reproductor:hover .contenedor-reproductor{
+    opacity: 1;
+}
+
+
+.elipse1, .elipse2{
+    border: 80px solid rgba(0, 0, 0, .1);
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+}
+
+.elipse1 {
+     inset-block-start: -443px;
+    inset-inline-start: -240px;
+
+    /* inset-block-start: -240px;
+    inset-inline-start: -443px; */
+}
+
+.elipse2{
+    inset-block-start: 347px;
+    inset-inline-start: 923px;
+}

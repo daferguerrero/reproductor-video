@@ -1,0 +1,40 @@
+.boton{
+    inline-size: 32px;
+    block-size: 32px;
+    border: none;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    /* inline-size: 60px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.boton:active{
+    transform: scale(.9);
+}
+
+#retroceder{
+    background-image: url('../images/-10.svg');
+}
+
+#play{
+    background-image: url('../images/play.svg');
+}
+
+#pausa{
+    background-image: url('../images/pause.svg');
+}
+
+#avanzar{
+    background-image: url('../images/+10.svg');
+}
+
+/* #silenciar-on{
+    background-image: url('../images/mute-on.svg');
+}
+
+#silenciar-off{
+    background-image: url('../images/mute-off.svg');
+} */

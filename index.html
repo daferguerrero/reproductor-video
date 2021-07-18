@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="reproductor">
+            <div class="contenedor-reproductor">
+                <h2 class="titulo-reproductor">Como inslatar un complemento de Visual Studio Code</h2>
+                <div class="acciones-reproductor">
+                    <button class="boton" id="retroceder" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+                    <button class="boton" id="play" aria-label="Reproducir" title="Reproducir"></button>
+                    <button class="boton" hidden id="pausa" aria-label="Pausar" title="Pausar"></button>
+                    <button class="boton" id="avanzar" aria-label="Avanzar 10 segundos" title="Avanzar 10 segundos"></button>
+                    <!-- <button class="boton" id="silenciar-on" aria-label="Silenciar"></button>
+                    <button class="boton" id="silenciar-off" aria-label="Silenciar"></button> -->
+                </div>
+
+                <div class="barra-progreso">
+                    <input id="progreso" type="range" min="0" value="0" step="1">
+                </div>
+            </div>
+
+            <video id="video" poster="./images/Snapshot_1.png" src="https://youtu.be/eiFPYzY-V3g" width="400px"></video>
+        </div>
+        <div class="elipse1"></div>
+        <div class="elipse2"></div>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
