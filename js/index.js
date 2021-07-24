@@ -39,7 +39,7 @@ function manejarRetroceder() {
 
 function manejarAvanzar() {
     $video.currentTime = $video.currentTime + 10 // currentTime dice exactamente donde esta en segundos la reproducción del video
-    avanzar.log('Avanzar 10 segundos', $video.currentTime)
+    console.log('Avanzar 10 segundos', $video.currentTime)
 }
 
 
