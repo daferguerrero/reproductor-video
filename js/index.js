@@ -52,7 +52,7 @@ $video.addEventListener('timeupdate', manejarTiempoActual)
 
 function manejarBarraProgreso() {
     $progreso.max = $video.duration
-    comsole.log('Se ha cargado el video', $video.duration)
+    console.log('Se ha cargado el video', $video.duration)
 }
 
 function manejarTiempoActual() {
